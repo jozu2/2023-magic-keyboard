@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard</title>
+  <link rel ="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="output-container">
+    <div data-output-one class="output-one"></div>
+  </div>
+
+
+
+    <div class="modal">
+          <div class="content">
+            this is CONTENT
+          </div>
+          <button>save</button>
+          <button>cancel</button>
+    </div>
+    <div class="modal-two">
+      <div class="content-two">
+        this is CONTENT
+      </div>
+      <button>save</button>
+      <button>cancel</button>
+</div>
+<div class="modal-three">
+  <div class="content-three">
+    this is CONTENT
+  </div>
+  <button>save</button>
+  <button>cancel</button>
+</div>
+<div class="modal-four">
+  <div class="content-four">
+    this is CONTENT
+  </div>
+  <button>save</button>
+  <button>cancel</button>
+</div>
+
+
+
+
+  <div class="keyboard-container">
+    <div class="one">
+    <button id = "color-special" class="rgb  special-rgb">esc</button>
+    <div class="half-space"></div>
+    <button id="color-two" class="rgb">f1</button>
+    <button id="color-two" class="rgb">f2</button>
+    <button id="color-two" class="rgb">f3</button>
+    <button id="color-two" class="rgb">f4</button>
+    <div class="half-space"> </div>
+    <button id="color-special" class="rgb special-rgb">f5</button>
+    <button id="color-special" class="rgb special-rgb">f6</button>
+    <button id="color-special" class="rgb special-rgb">f7</button>
+    <button id="color-special" class="rgb special-rgb">f8</button>
+    <div class="half-space"> </div>
+    <button class="number rgb letters">f9</button>
+    <button class="number rgb letters">f10</button>
+    <button class="number rgb letters">f11</button>
+    <button class="number rgb letters">f12</button> 
+    <div class="separator-space"></div>
+    <button id="color-special" class="rgb special-rgb customize-switch">©</button>
+    <button id="color-special" class="rgb special-rgb rgb-switch">℗</button>
+    <button id="color-special" class="rgb special-rgb screen-on">™</button> 
+  </div>
+
+
+  <div class="two">
+    <button data-letter id="color-one" class="rgb">`</button>
+    <button data-letter class="number rgb onShift letters">1</button>
+    <button data-letter class="number rgb onShift letters">2</button>
+    <button data-letter class="number rgb onShift letters">3</button>
+    <button data-letter class="number rgb onShift letters">4</button>
+    <button data-letter class="number rgb onShift letters">5</button>
+    <button data-letter class="number rgb onShift letters">6</button>
+    <button data-letter class="number rgb onShift letters">7</button>
+    <button data-letter class="number rgb onShift letters">8</button>
+    <button data-letter class="number rgb onShift letters">9</button>
+    <button data-letter class="number rgb onShift letters">0</button>
+    <button data-letter class="number rgb onShift letters">-</button>
+    <button data-letter class="number rgb onShift letters">=</button>
+    <button id="color-one" data-backspace class="double-space media left rgb"><-</button>
+    <div class="separator-space"></div>
+    <button class="rgb number letters" id="small">insert</button>
+    <button class="rgb number letters" id="small">home</button>
+    <button class="rgb number letters" id="small">pgUp</button>
+</div>
+
+<div class="three">
+      <button data-tab id="color-one" class="onehalf-space rgb">Tab</button>
+      <button data-letter  class="letters rgb onShift">q</button>
+      <button data-letter  class="letters rgb onShift">w</button>
+      <button data-letter  class="letters rgb onShift">e</button>
+      <button data-letter  class="letters rgb onShift">r</button>
+      <button data-letter  class="letters rgb onShift">t</button>
+      <button data-letter  class="letters rgb onShift">y</button>
+      <button data-letter  class="letters rgb onShift">u</button>
+      <button data-letter  class="letters rgb onShift">i</button>
+      <button data-letter  class="letters rgb onShift">o</button>
+      <button data-letter  class="letters rgb onShift">p</button>
+      <button  data-letter class="letters number rgb onShift">[</button>
+      <button  data-letter class="letters number rgb onShift">]</button>
+      <button  data-letter id="color-two" class="onehalf-space left rgb onShift" onShift>\</button>
+      <div class="separator-space"></div>
+      <button class="rgb number letters" id="small">delete</button>
+      <button class="rgb number letters" id="small">end</button>
+      <button class="rgb number letters" id="small">pgDn</button>
+</div>
+
+
+<div class="four">
+      <button data-capslock id="color-one" class="double-space rgb">Capslock</button>
+      <button data-letter  class="letters rgb onShift">a</button>
+      <button data-letter  class="letters rgb onShift">s</button>
+      <button data-letter  class="letters rgb onShift">d</button>
+      <button data-letter  class="letters rgb onShift">f</button>
+      <button data-letter  class="letters rgb onShift">g</button>
+      <button data-letter  class="letters rgb onShift">h</button>
+      <button data-letter  class="letters rgb onShift">j</button>
+      <button data-letter  class="letters rgb onShift">k</button>
+      <button data-letter  class="letters rgb onShift">l</button>
+      <button data-letter class="letters number rgb onShift">;</button>
+      <button data-letter class=" letters number rgb onShift">'</button>
+      <button id="color-two" class="double-space left rgb">Enter</button>
+      <div class="separator-space"></div>
+      <div class="whole-space reduce"></div>
+      <div class="whole-space logo"  style="font-size: 2em; color: bisque; text-align: center; padding-left: 15px; font-weight: bold; animation: animate 10s linear infinite ; padding-top: 15px" >-X-</div>
+      <div class="whole-space"></div>
+</div>
+
+<div class="five">
+      <button data-shift-change id="color-one" class="doublehalf-space left rgb">Shift</button>
+      <button data-letter  class="letters rgb onShift">z</button>
+      <button data-letter  class="letters rgb onShift">x</button>
+      <button data-letter  class="letters rgb onShift">c</button>
+      <button data-letter  class="letters rgb onShift">v</button>
+      <button data-letter  class="letters rgb onShift">b</button>
+      <button data-letter  class="letters rgb onShift">n</button>
+      <button data-letter  class="letters rgb onShift">m</button>
+      <button  data-letter class="letters number rgb onShift">,</button>
+      <button  data-letter class="letters number rgb onShift">.</button>
+      <button  data-letter class="letters number rgb onShift">/</button>
+      <button data-shift-change id="color-one" class="doublehalf-space rgb">Shift</button>
+      <div class="separator-spaceone"></div>
+      <div class="whole-space"></div>
+      <button id="color-two" class="rgb">^</button>
+      <div class="whole-space"></div>
+</div>
+     
+<div class="six">
+      <button id="color-one" class="rgb"> Ctrl</button>
+      <button id="color-one" class="rgb">win</button>
+      <button id="color-one" class="rgb">alt</button>
+      <button id="color-special" data-spacebar special-rgb class="space-bar rgb special-rgb">Space Bar</button>
+      <button id="color-one" class="rgb" >alt</button>
+      <button id="color-one" class="rgb">Fn</button>
+      <button id="color-one" class="rgb">xd</button>
+      <button id="color-one" class="rgb">Ctrl</button>
+      <div class="separator-spacetwo"></div>
+      <button id="color-two" class="whole-space rgb" >＜</button>
+      <button id="color-two" class="whole-space rgb">▽</button>
+      <button id="color-two" class="whole-space rgb">></button>
+      </div>
+      
+
+
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>

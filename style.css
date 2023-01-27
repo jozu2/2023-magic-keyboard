@@ -1,0 +1,320 @@
+*,
+ ::before,
+ ::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+.modal , .modal-two, .modal-three, .modal-four{
+ position: fixed;
+  width: 50vw;
+  height: 350px;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 1s ease-in-out;
+  top: -500px;
+}
+
+
+
+
+
+
+
+
+
+
+.keyboard-container{
+  position: absolute;
+  bottom: 30%;
+  display: grid;
+  justify-content: center;
+  align-content:flex-end;
+ width: 100vw;
+  grid-template-rows: repeat(6, 70px);
+ z-index: 2;
+
+
+}
+.one ,.two ,.three ,.four ,.five , .six{
+  display: flex;
+  
+}
+.one button,.two button,.three button,.four button,.five button, .six button{
+  width: 70px;
+  margin: 4px 2px;
+  border-radius: 17%;
+  font-size: 1.7em;
+  color:rgb(196, 29, 29);
+  background-color:bisque;
+  
+
+
+}
+
+
+.one button:hover,.two button:hover,.three button:hover,.four button:hover,.five button:hover, .six button:hover{
+cursor: pointer;
+background-color: rgb(201, 201, 201);
+
+
+}
+
+.output-container{
+  display: none;
+ position: absolute;
+ top: 2vh;
+  width: 75vw;
+  height: 350px;
+  background-color: rgb(86, 207, 136);
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 2%;
+}
+
+.output-one{
+
+ font-size: 2.8rem;
+ padding: 100px 60px;
+word-break: break-all;
+word-wrap: break-word;
+}
+
+.half-space{
+  width: 47.9px;
+  font-size: 1.7rem;
+}
+
+.separator-space{
+width: 27px;
+}
+
+button.double-space{
+  width: 140px;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  
+}
+
+button.onehalf-space{
+  width: 104.5px;
+   font-size: 1.7rem;
+   font-size: 1.7rem;
+}
+
+button.doublehalf-space{
+  width: 176.8px;
+  font-size: 1.7rem;
+}
+
+button.double-space.left{
+text-align: center;
+letter-spacing: 2px;
+
+}
+.separator-spaceone{
+  width: 35px;
+}
+.six button{
+  width: 86.9px;
+  font-size: 1.4rem;
+}
+
+button.space-bar{
+  width: 460px;
+}
+button.whole-space, .whole-space{
+  width: 70px;
+
+}
+
+
+.separator-spacetwo{
+  width: 30px;
+}
+
+#small{
+  font-size: 1.2rem;
+}
+
+#color-one{
+  background-color: rgba(236, 62, 91, 0.8);
+  color: rgb(255, 255, 255, .8);
+}
+#color-one:hover{
+  background-color: rgba(134, 35, 52, 0.8);
+  color: rgb(255, 255, 255, .5);
+}
+#color-special{
+  background-color: rgba(121, 181, 228, 0.8);
+  color: rgb(255, 255, 255, .8);
+}
+#color-special:hover{
+  background-color: rgba(59, 91, 116, 0.8);
+  color: rgb(255, 255, 255, .5);
+}
+
+
+#color-two{
+  background-color: rgba(224, 99, 67, 0.973);
+  color: rgb(255, 255, 255, .9);
+}
+#color-two:hover{
+  background-color: rgb(148, 54, 0);
+  color: rgb(255, 255, 255, .5);
+  
+}
+
+
+.button-menu{
+  display: flex;
+  position: sticky;
+  width: 500px;
+  height: 100px;
+  margin: 50px;
+}
+.button-menu button{
+  cursor: pointer;
+  padding: 0.45em 1em;
+  font-size: 1.25rem;
+  margin-top: 40px;
+  margin-right: 20px;
+  background-color: transparent;
+  color: white; 
+  border: currentColor 0.225em solid;
+  border-radius: 0.25em;
+text-shadow: 0 0 0 .125em currentColor;
+box-shadow: inset 0 0 .8em 0 currentColor, 0 0 .8em 0 currentColor;
+}
+
+
+
+
+@keyframes animate {
+  from{
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+@media screen and (max-width: 1354px) {
+
+
+  .output-container{
+   
+    
+     width: 70vw;
+     height: 400px;
+     background-color: rgb(86, 207, 136);
+     left: 50%;
+     transform: translate(-50%);
+     border-radius: 2%;
+   }
+   
+   .output-one{
+   
+    font-size: 2.4rem;
+    padding: 100px 60px;
+   word-break: break-all;
+   word-wrap: break-word;
+   }
+   
+
+
+  .keyboard-container{
+  
+    bottom: 30%;
+    display: grid;
+   width: 100vw;
+    grid-template-rows: repeat(6, 57px);
+   
+  
+  }
+
+  .one button,.two button,.three button,.four button,.five button, .six button{
+    width: 57px;
+    margin: 2.7px 1.5px;
+    font-size: 1.4em;
+  }
+
+
+ .half-space{
+  width: 47.9px;
+  font-size: 1.7rem;
+}
+
+.separator-space{
+width: 27px;
+}
+
+button.double-space{
+  width: 130px;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  
+}
+
+button.onehalf-space{
+  width: 99px;
+   font-size: 1.4rem;
+ 
+}
+
+button.doublehalf-space{
+  width: 159px;
+  font-size: 1.4rem;
+}
+
+button.double-space.left{
+text-align: center;
+letter-spacing: 2px;
+
+}
+
+button.double-space.media{
+  width: 140px;
+  
+  }
+.separator-spaceone{
+  width: 30px;
+}
+.six button{
+  width: 70.4px;
+  font-size: 1.4rem;
+}
+
+button.space-bar{
+  width: 405px;
+}
+button.whole-space, .whole-space{
+  width: 57px;
+
+}
+.whole-space.logo{
+  width: 70px;
+  font-size: .4em;
+align-items: flex-start;
+}
+.whole-space.reduce{
+  width: 45px;
+}
+
+.separator-spacetwo{
+  width: 30px;
+}
+
+
+}
