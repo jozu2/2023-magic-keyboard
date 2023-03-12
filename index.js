@@ -80,8 +80,13 @@ const pushColor = document.querySelector('.push')
 
 const active = document.querySelectorAll('.active')
 
+const backgroundColorChange = document.querySelector('.background-change')
 const keyboard = new Keyboard(outputOne , capsLetters)
 
+const bodyChangeCOlor = document.getElementsByTagName('body')[0]
+
+
+console.log()
 
 const click0 = new Audio();
 click0.src = "sounds/click0.wav"
@@ -94,6 +99,11 @@ click2.src = "sounds/click2.wav"
 
 const click3 = new Audio();
 click3.src = "sounds/click3.wav"
+
+
+backgroundColorChange.addEventListener('input', function() {
+  bodyChangeCOlor.style.backgroundColor = this.value
+} )
 
 
 
@@ -451,6 +461,9 @@ modalFour.style.top = '-500px'
 modalFive.style.top = '-500px'
 keyboardContainer.style.bottom = '30%'
 customize.disabled = false
+rgbSwitch.disabled = false
+screenOn.disabled = false
+
 for(let i= 0;i<colorOne.length; i++){
   colorOne[i].classList.remove('active')
 }
@@ -492,7 +505,7 @@ function modalOneOpen(){
             modalThree.style.top = '-500px'
             modalFour.style.top = '-500px'
             modalFive.style.top = '-500px'
-            keyboardContainer.style.bottom = '10%'
+            keyboardContainer.style.bottom = '2%'
            
           }else{
            
@@ -512,7 +525,7 @@ function modalTwoOpen(){
             modalThree.style.top = '-500px'
             modalFour.style.top = '-500px'
             modalFive.style.top = '-500px'
-            keyboardContainer.style.bottom = '10%'
+            keyboardContainer.style.bottom = '2%'
            
           }else{
            
@@ -533,7 +546,7 @@ function modalThreeOpen(){
             modalThree.style.top = '0px'
             modalFour.style.top = '-500px'
             modalFive.style.top = '-500px'
-            keyboardContainer.style.bottom = '10%'
+            keyboardContainer.style.bottom = '2%'
            
           }else{
            
@@ -554,7 +567,7 @@ function modalFourOpen(){
             modalThree.style.top = '-500px'
             modalFour.style.top = '0px'
             modalFive.style.top = '-500px'
-            keyboardContainer.style.bottom = '10%'
+            keyboardContainer.style.bottom = '2%'
            
           }else{
            
@@ -574,7 +587,7 @@ function modalFiveOpen(){
             modalThree.style.top = '-500px'
             modalFour.style.top = '-500px'
             modalFive.style.top = '0px'
-            keyboardContainer.style.bottom = '10%'
+            keyboardContainer.style.bottom = '2%'
            
           }else{
            
@@ -675,6 +688,8 @@ numbers.forEach(button => {
 customize.classList.add('turn-white')
 customize.addEventListener('click', ()=> {
   customize.disabled = true
+  rgbSwitch.disabled = true
+  screenOn.disabled = true
 
 
   for(let i= 0;i<colorOne.length; i++){
@@ -716,6 +731,8 @@ for(let i= 0;i<rgbKeys.length; i++){
 
 rgbSwitch.addEventListener('click',() => {
   if(rgbKeys[0].style.backgroundColor != 'black'){
+    customize.disabled = true
+    
    
     logo.style.color = 'green'
     logo.style.textShadow = '0 0 0.125em currentColor'
@@ -730,6 +747,7 @@ rgbSwitch.addEventListener('click',() => {
     } 
   }else{
 
+    customize.disabled = false
   
     for(let i = 0; i<rgbKeys.length; i++){
       rgbKeys[i].style.animation = 'none'
@@ -773,13 +791,16 @@ rgbSwitch.addEventListener('click',() => {
 
 screenOn.addEventListener('click', () => {
   if(outputContainer.style.display !== 'block'){
+    customize.disabled = true
+    
     outputContainer.style.display = 'block'
     keyboardContainer.style.bottom ='5%'
    
   }else{
     outputContainer.style.display = 'none'
     keyboardContainer.style.bottom ='30%'
-   
+    customize.disabled = false
+
   }
 })
 
